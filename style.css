@@ -28,6 +28,90 @@
     line-height: 1.5;
 }
 
+/* -------HEADER 1----- */
+.header-1{
+    position: relative;
+    display: flex;
+}
+.header-1 ul #naija a{
+    text-decoration: none;
+    padding: 5px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    background-color: hsla(0, 0%, 100%, .85);
+    border-radius: 1rem;
+}
+
+.header-1 ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: space-around;
+    padding-left: 6em;
+    width: 70%;
+    height: 8vh;
+    background-color: red;
+}
+.header-1 ul li{
+    padding: 10px 15px 0px 17px;
+    padding-bottom: 1em;
+    text-align: center;
+}
+.header-1 ul li a{
+    color: #FAE5DA;
+    font-size: 13px;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.header-1 ul li ul{
+    display: block;
+    display: none;
+}
+.login{
+   height: 100%;
+   background-color: blue;
+}
+.LOGIN{
+    border: soloid green;
+    transform: skewY(deg);
+}
+.login a{
+    color: #fae5da;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 0px 20px 10px 0px; 
+    text-align: center;
+}
+
+.middle{
+    position: absolute;
+    right: 130px;
+    top: 170px;
+}
+
+/* -----TABLET SCREEN----- */
+.displaylater{
+    display: none;
+}
+.displaylater-2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 15px;
+}
+.dis-tablet{
+    padding: 32px 0px 10px;
+}
+.dis-tablet a{
+    text-decoration: none;
+    color: #FFF;
+    background: #DD4F05;
+    padding: 10px 22px 15px 15px;
+    margin: 0px 7px 0px 1px;
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 20px;
+}
 /* -------SECTION TWO----- */
 
 .sect-two{
@@ -246,16 +330,335 @@ svg{
     background-color: rgba(255, 68, 0, 0.877);
 }
 
+/* -------HEADER TWO------ */
+.header-2{
+    position: relative;
+}
+.header-2 ul{
+    border: solid red;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    width: 88%;
+    margin: auto;
+}
+.header-2 .personal-1{
+    display: none;
+    /* display: block; */
+}
+.header-2 ul li{
+    padding: 17px 9px 0px;
+}
+.header-2 ul li a{
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px 9px 21px;
+    color: #424A52;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* .header-2 ul .personal:hover .personal-1{
+    display: block;
+    border: solid green;
+    width: 100%;
+} */
+
+#submenu3{
+    position: absolute;
+    top: 69px;
+    left: 0;
+    width: 77.5%;
+    transition: all .2s ease-in-out;
+    background: #f7f8f8;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, .15);
+    border: 1px solid #e0e1e2;
+    visibility: hidden;
+    opacity: 0;
+    z-index: -1;
+    display: block;
+    height: 710.5px
+}
+
+#submenu3 ul{
+    /* padding: 10px 6px 10px 13px; */
+    width: 33.3333333%;
+    background: #fff;
+    min-height: 100%;
+    padding: 27px 0 37px;
+    transition: all .2s ease-in-out;
+}
+li:hover ul#submenu3{
+    opacity: 1;
+    visibility: visible;
+
+}
+#submenu3 li:hover{
+    /* background-color: #7a7171; */
+}
+
+/* ------CAROUSEL PAGE----- */
+.carousel{
+    margin-top: 1.16em;
+    position: relative;
+}
+.bimage{
+    background-image: url(./IMAGES/website_bvn-x-nin.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.bimage2{
+    background-color: whitesmoke;
+    height: 100vh;
+}
+.carosel-1{
+    margin-left: 5em ;
+    padding: 0px 15px;
+    width: 28%;
+    transform: translateY(100px);
+}
+
+.carosel-1 h1{
+    margin: 0px 0px 25px;
+    font-size: 52px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+    letter-spacing: -.015em
+}
+.carosel-1 h1 strong{
+    color: #dd4f05;
+    font-size: 52px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+}
+.carosel-1 div{
+    margin-top: 5em;
+}
+.carosel-1 a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 16px 36px;
+    margin: 32px 0px 0px ;
+    background: #DD4F05;
+}
+.carosel-1 p{
+    font-family: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #696f73;
+    margin-bottom: 2em;
+}
+
+/* -------ONLINE BANKING----- */
+.online-Banking{
+    position: absolute;
+    border-radius: 0px;
+    background: #e0e0e0;
+    box-shadow:  5px 5px 17px #b1b1b1,
+             -5px -5px 17px #ffffff;         
+    width: 250px;
+    top: 2em;
+    right: 8em;
+}
+.online-Banking h4{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    padding: 18px 0px;
+    color: #424A52;
+    text-align: center;
+    background-color: #FFF;
+    font-weight: 700;
+    margin: 0;
+}
+.online-Banking ul{
+    display: flex;
+    list-style: none;
+    background: #F7F8F8;
+    padding: 10px 33px;
+}
+.online-Banking ul li{
+    padding: 0px 10px;
+}
+.online-Banking ul li a{
+    text-decoration: none;
+    color: #676767;
+    padding: 15px 0 11px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #676c72;
+    border: 0;
+    background: transparent;
+}
+.online-Banking .logindown{
+    padding: 28px 40px;
+}
+.logindown a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #dd4f05;
+    padding: 10px 24px 12px 26px;
+    color: #FFF;
+}
+.logindown div{
+    margin: 22px 0px 0px ;
+}
+.logindown div span{
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px 10px 0px 0px ;
+    text-align: center;
+}
+
+/* ------Carousel displaylater-------- */
+.firstbimage{
+    background-image: url(./IMAGES/website_bvn-x-nin.jpg);
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.secondbimage{
+    background-color: whitesmoke;
+    height: 40vh;
+}
+.text-first{
+    padding: 23px 15px 48px;
+}
+.text-first h1{
+    margin: 0px 0px 12px;
+}
+.text-first h1 strong{
+    font-size: 40px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #dd4f05;
+    font-weight: 400;
+    text-align: center;
+    display: flex;
+}
+.text-first a{
+    background-color: #dd4f05;
+    text-decoration: none;
+    color: #FFF;
+    padding: 13px 36px 17px;
+    margin: 30px 0px 0px;
+}
+.text-first div{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text-first p{
+    color: #696f73;
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+#carouselExampleAutoplaying{
+    display: none;
+}
+
+/* -------last CAROUSEL----- */
+
+.media-carousel {
+    margin-bottom: 0;
+    padding: 0 40px 30px 40px;
+    margin-top: 30px;
+  }
+  .media-carousel .carousel-control.left {
+    left: -12px;
+    background: #222;
+    border: 4px solid #fff;
+    border-radius: 23px;
+    height: 40px;
+    width: 40px;
+    margin-top: 30px;
+  }
+  .media-carousel .carousel-control.right {
+    right: -12px;
+    background: #222;
+    border: 4px solid #fff;
+    border-radius: 23px;
+    height: 40px;
+    width: 40px;
+    margin-top: 30px;
+  }
+  .media-carousel .carousel-indicators {
+    right: 50%;
+    bottom: 0;
+    margin-right: -19px;
+  }
+  .media-carousel .carousel-indicators li {
+    background: #c0c0c0;
+  }
+  .media-carousel .carousel-indicators .active {
+    background: #333;
+  }
+  .media-carousel img {
+    width: 250px;
+    height: 100px;
+  }
 
 
 
 
+
+
+
+
+
+
+
+.header-2 ul li:hover a{
+    color: red;
+    border-bottom: solid red;
+}
+.header-2 ul li:hover a{
+    .personal-1{
+        display: block;
+    }
+}
+.header-2 ul li a:hover img{
+    background-color: red;
+    border-bottom: none;
+}
 
 
 /* --------MEDIA QUERY----- */
 @media(max-width:1280px) {
     .Notice{
         width: 100%;
+    }
+    .header-1 ul{
+        width: 70%;
+        padding: 0;
+    }
+    .middle{
+        position: absolute;
+        right: 0;
+        top: 170px;
+    }
+    .carosel-1{
+        margin: 0;
+        width: 40%;
+    }
+    .carosel-2{
+        margin: 0;
+        width: 50%;
+    }
+
+    .online-Banking{
+        position: absolute;
+        right: 0;
     }
 }
 
@@ -284,6 +687,18 @@ svg{
         width: 100%;
     }
 
+    .header-1 ul{
+        width: 90%;
+    }
+    .carosel-1{
+        margin: 0;
+        width: 50%;
+    }
+    .carosel-2{
+        margin: 0;
+        width: 50%;
+    }
+
 }
 
 @media(max-width:768px){
@@ -301,11 +716,34 @@ svg{
     }
 
     .accordion-2{
-        display: block;
+        display: block;     
         width: 100%;
     }
 
     .svgs{
         display: none;
+    }
+
+    .displaylater{
+        display: block;
+    }
+
+    .header-1{
+        display: none;
+    }
+    .middle{
+        display: none;
+    }
+    .header-2{
+        display: none;
+    }
+    .online-Banking{
+        display: none;
+    }
+    #carouselExample{
+        display: none;
+    }
+    #carouselExampleAutoplaying{
+        display: block;
     }
 }
