@@ -31,7 +31,6 @@
 .header-1{
     position: relative;
     display: flex;
-    /* background-color: red; */
 }
 .header-1 ul #naija a{
     text-decoration: none;
@@ -46,12 +45,11 @@
     display: flex;
     align-items: center;
     list-style: none;
-    justify-content: space-around;
-    /* border: solid yellow; */
-    padding-left: 6em;
-    width: 70%;
+    justify-content: space-between;
+    padding-left: 5.8em;
+    width: 65%;
     height: 8vh;
-    background-color: red;
+    background: #dd4f05;
 }
 .header-1 ul li{
     padding: 10px 15px 0px 17px;
@@ -61,34 +59,985 @@
 .header-1 ul li a{
     color: #FAE5DA;
     font-size: 13px;
+    font-weight: 600;
     text-decoration: none;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .header-1 ul li ul{
-    display: block;
+    /* display: block; */
     display: none;
+    background-color: #FFFFFFBA;
+    width: 13rem !important;
+    position: absolute;
+    /* visibility: hidden; */
+    z-index: 1;
+    transition: all  ease-out;
 }
-.login{
-   height: 100%;
-   background-color: blue;
-   
+.header-1 ul .locate:hover ul{
+    display: block;
 }
+
+.LOGIN .login-text{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.skew-me{
+    position: absolute;
+    width: 15rem;
+    top: 0;
+    left: 650px;
+    z-index: -1;
+    transform: skewX(-27deg);
+    background: #ab3d04;
+    transition: all .2s ease-in-out;
+}
+
+.LOGIN{
+    width: 15rem;
+    z-index: 1;
+    background: #ab3d04;
+    transition: all .2s ease-in-out;
+}
+
+.LOGIN .login-text{
+   transform: skew(23deg);
+}
+
+
 .login a{
     color: #fae5da;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 13px;
-    padding: 0px 20px 10px 0px; 
-    margin-top2em: auto;
-    text-align: center;
 }
-.header-1 ul li a img{
-    color: #FFF;
-}
+
 .middle{
     position: absolute;
     right: 130px;
     top: 170px;
 }
+
+/* -------HEADER TWO------ */
+.header-2 .fa-solid {
+    float: right;
+}
+
+.header-2 {
+    position: relative;
+}
+
+.header-2 .dropdownmenu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    width: 88%;
+    margin: auto;
+    position: relative;
+}
+
+.header-2 .dropdownmenu li {
+    padding: 17px 9px 0px;
+}
+
+.header-2 .dropdownmenu li a {
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px 9px 21px;
+    color: #424A52;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.dropdownmenu ul,
+.dropdownmenu li {
+    margin: 0;
+    padding: 0;
+}
+
+.dropdownmenu ul {
+    list-style: none;
+    width: 100%;
+}
+
+.dropdownmenu li {
+    text-decoration: none;
+}
+
+.dropp1 {
+    display: none;
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+}
+
+.drop1-btnss .dropp1 ul {
+    width: 30%;
+    background: #fff;
+    min-height: 100%;
+    padding: 27px 0 37px;
+    transition: all .2s ease-in-out;
+}
+.drop1-btnss .dropp1 ul li{
+    padding-left: 20px;
+    padding-right: 25px;
+}
+
+.drop1-btnss .dropp1 ul li a {
+    position: relative;
+    font-size: 15px;
+    font-weight: 700;
+    display: block;
+    color: #424a52;
+    border-bottom: none;
+    border-bottom: thin solid rgba(0, 0, 0, 0.178);
+}
+
+.Account {
+    display: none;
+}
+
+.dropp1 .Account1 ul {
+    position: absolute;
+    left: 30%;
+    top: 0;
+    background-color: whitesmoke;
+}
+
+.dropp1 .Account1:hover .Account {
+    display: block;
+}
+
+.service {
+    display: none;
+}
+
+.dropp1 .service ul {
+    position: absolute;
+    left: 30%;
+    top: 0;
+    background-color: whitesmoke;
+}
+
+.dropp1 .Service:hover .service {
+    display: block;
+}
+
+.card-sub {
+    display: none;
+}
+
+.dropp1 .card-sub ul {
+    position: absolute;
+    left: 30%;
+    top: 0;
+    background-color: whitesmoke;
+}
+
+.dropp1 .card1-sub:hover .card-sub {
+    display: block;
+}
+
+.loan-submenu {
+    display: none;
+}
+
+.dropp1 .loan-submenu ul {
+    position: absolute;
+    left: 30%;
+    top: 0;
+    background-color: whitesmoke;
+}
+
+.dropp1 .Loans:hover .loan-submenu {
+    display: block;
+}
+
+.ways-submenu {
+    display: none;
+}
+
+.dropp1 .ways-submenu ul {
+    position: absolute;
+    left: 30%;
+    top: 0;
+    background-color: whitesmoke;
+}
+
+.dropp1 .Ways:hover .ways-submenu {
+    display: block;
+}
+
+.private-submenu {
+    display: none;
+}
+
+.dropp1 .private-submenu ul {
+    position: absolute;
+    left: 30%;
+    top: 0;
+    background-color: whitesmoke;
+}
+
+.dropp1 .Private:hover .private-submenu {
+    display: block;
+}
+
+.account-sub-menu {
+    display: none;
+}
+
+.dropp1 .Account1 .Account .personal-subme1 .account-sub-menu ul {
+    width: 100%;
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+
+.dropp1 .Account1 .Account .personal-subme1:hover .account-sub-menu {
+    display: block;
+}
+
+.saving-sub-menu {
+    display: none;
+}
+
+.dropp1 .Account1 .Account .Savings-subme .saving-sub-menu ul {
+    width: 100%;
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+
+.dropp1 .Account1 .Account .Savings-subme:hover .saving-sub-menu {
+    display: block;
+}
+
+.banking-sub-menu {
+    display: none;
+}
+
+.dropp1 .Service .service .e-Banking-subme .banking-sub-menu ul {
+    width: 100%;
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+
+.dropp1 .Service .service .e-Banking-subme:hover .banking-sub-menu {
+    display: block;
+}
+
+.IMT-sub-menu {
+    display: none;
+}
+
+.dropp1 .Service .service .IMT-subme .IMT-sub-menu ul {
+    width: 100%;
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+.dropp1 .Service .service .IMT-subme:hover .IMT-sub-menu {
+    display: block;
+}
+
+.other-sub-menu {
+    display: none;
+}
+
+.dropp1 .Service .service .other-subme .other-sub-menu ul {
+    width: 100%;
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+
+.dropp1 .Service .service .other-subme:hover .other-sub-menu {
+    display: block;
+}
+
+.naira-sub-menu {
+    display: none;
+}
+
+.dropp1 .card1-sub .card-sub .naira-subme .naira-sub-menu ul {
+    width: 100%;
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+
+.dropp1 .card1-sub .card-sub .naira-subme:hover .naira-sub-menu {
+    display: block;
+}
+
+.dollardebit-sub-menu {
+    display: none;
+}
+
+.dropp1 .card1-sub .card-sub .dollardebit-subme .dollardebit-sub-menu ul {
+    width: 100%;
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+
+.dropp1 .card1-sub .card-sub .dollardebit-subme:hover .dollardebit-sub-menu {
+    display: block;
+}
+
+.dollarcredit-sub-menu {
+    display: none;
+}
+
+.dropp1 .card1-sub .card-sub .dollarcredit-subme .dollarcredit-sub-menu ul {
+    width: 100%;
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+
+.dropp1 .card1-sub .card-sub .dollarcredit-subme:hover .dollarcredit-sub-menu {
+    display: block;
+}
+
+.prepaid-sub-menu {
+    display: none;
+}
+
+.dropp1 .card1-sub .card-sub .prepaid-subme .prepaid-sub-menu ul {
+    width: 100%;
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+
+.dropp1 .card1-sub .card-sub .prepaid-subme:hover .prepaid-sub-menu {
+    display: block;
+}
+
+.deals-sub-menu {
+    display: none;
+}
+
+.dropp1 .card1-sub .card-sub .deals-subme .deals-sub-menu ul {
+    width: 100%;
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+
+.dropp1 .card1-sub .card-sub .deals-subme:hover .deals-sub-menu {
+    display: block;
+}
+
+.tailored-sub-menu {
+    display: none;
+}
+
+.dropp1 .Private .private-submenu .tailored-subme .tailored-sub-menu ul {
+    width: 100%;
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+
+.dropp1 .Private .private-submenu .tailored-subme:hover .tailored-sub-menu {
+    display: block;
+}
+
+.premium-sub-menu {
+    display: none;
+}
+
+.dropp1 .Private .private-submenu .premium-subme .premium-sub-menu ul {
+    width: 100%;
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+
+.dropp1 .Private .private-submenu .premium-subme:hover .premium-sub-menu {
+    display: block;
+}
+
+/* --------BUSINESS----- */
+
+.drop2 {
+    display: none;
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+}
+
+.drop2-btnss .drop2 ul {
+    width: 30%;
+    background: #fff;
+    min-height: 100%;
+    padding: 27px 0 37px;
+    transition: all .2s ease-in-out;
+}
+
+.drop2-btnss .drop2 ul li{
+    padding-left: 20px;
+    padding-right: 25px;
+}
+
+.drop2-btnss .drop2 ul li a {
+    position: relative;
+    font-size: 15px;
+    font-weight: 700;
+    display: block;
+    color: #424a52;
+    /* border-bottom: none !important; */
+    border-bottom: thin solid rgba(0, 0, 0, 0.178);
+}
+
+.account2-submenu {
+    display: none;
+}
+
+.drop2 .account2-submenu ul {
+    position: absolute;
+    left: 30%;
+    top: 0;
+    background-color: whitesmoke;
+}
+
+.drop2 .account2:hover .account2-submenu {
+    display: block;
+}
+
+.SME-submenu {
+    display: none;
+}
+
+.drop2 .SME-submenu ul {
+    position: absolute;
+    left: 30%;
+    top: 0;
+    background-color: whitesmoke;
+}
+
+.drop2 .SME:hover .SME-submenu {
+    display: block;
+}
+
+.international-submenu {
+    display: none;
+}
+
+.drop2 .international-submenu ul {
+    position: absolute;
+    left: 30%;
+    top: 0;
+    background-color: whitesmoke;
+}
+
+.drop2 .international:hover .international-submenu {
+    display: block;
+}
+
+.cards-submenu {
+    display: none;
+}
+
+.drop2 .cards-submenu ul {
+    position: absolute;
+    left: 30%;
+    top: 0;
+    background-color: whitesmoke;
+}
+
+.drop2 .Cards:hover .cards-submenu {
+    display: block;
+}
+
+.services-submenu {
+    display: none;
+}
+
+.drop2 .services-submenu ul {
+    position: absolute;
+    left: 30%;
+    top: 0;
+    background-color: whitesmoke;
+}
+
+.drop2 .Services:hover .services-submenu {
+    display: block;
+}
+
+.SME-sub-menu {
+    display: none;
+}
+
+.drop2 .SME .SME-submenu .SME-subme .SME-sub-menu ul {
+    width: 100%;
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+
+.drop2 .SME .SME-submenu .SME-subme:hover .SME-sub-menu {
+    display: block;
+}
+
+.advance-sub-menu {
+    display: none;
+}
+
+.drop2 .SME .SME-submenu .advance-subme .advance-sub-menu ul {
+    width: 100%;
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+
+.drop2 .SME .SME-submenu .advance-subme:hover .advance-sub-menu {
+    display: block;
+}
+
+.e-business-sub-menu {
+    display: none;
+}
+
+.drop2 .SME .SME-submenu .e-business-subme .e-business-sub-menu ul {
+    width: 100%;
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+
+.drop2 .SME .SME-submenu .e-business-subme:hover .e-business-sub-menu {
+    display: block;
+}
+
+.e-commerce-sub-menu {
+    display: none;
+}
+
+.drop2 .SME .SME-submenu .e-commerce-subme .e-commerce-sub-menu ul {
+    width: 100%;
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+
+.drop2 .SME .SME-submenu .e-commerce-subme:hover .e-commerce-sub-menu {
+    display: block;
+}
+
+.import-sub-menu {
+    display: none;
+}
+
+.drop2 .international .international-submenu .import-subme .import-sub-menu ul {
+    width: 100%;
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+
+.drop2 .international .international-submenu .import-subme:hover .import-sub-menu {
+    display: block;
+}
+
+.international-sub-menu {
+    display: none;
+}
+
+.drop2 .international .international-submenu .international-subme .international-sub-menu ul {
+    width: 100%;
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+
+.drop2 .international .international-submenu .international-subme:hover .international-sub-menu {
+    display: block;
+}
+
+.services-sub-menu {
+    display: none;
+}
+
+.drop2 .Services .services-submenu .services-subme .services-sub-menu ul {
+    width: 100%;
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+
+.drop2 .Services .services-submenu .services-subme:hover .services-sub-menu {
+    display: block;
+}
+
+.other22-sub-menu {
+    display: none;
+}
+
+.drop2 .Services .services-submenu .other22-subme .other22-sub-menu ul {
+    width: 100%;
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+
+.drop2 .Services .services-submenu .other22-subme:hover .other22-sub-menu {
+    display: block;
+}
+
+/* -------ABOUT US----- */
+.drop3 {
+    display: none;
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+}
+
+.drop3-btnss .drop3 ul {
+    width: 30%;
+    background: #fff;
+    min-height: 100%;
+    padding: 27px 0 37px;
+    transition: all .2s ease-in-out;
+}
+
+.drop3-btnss .drop3 ul li{
+    padding-left: 20px;
+    padding-right: 25px;
+}
+
+.drop3-btnss .drop3 ul li{
+    padding-left: 20px;
+    padding-right: 25px;
+}
+
+.drop3-btnss .drop3 ul li a {
+    position: relative;
+    font-size: 15px;
+    font-weight: 700;
+    display: block;
+    color: #424a52;
+    /* border-bottom: none !important; */
+    border-bottom: thin solid rgba(0, 0, 0, 0.178);
+}
+
+.aboutus-submenu {
+    display: none;
+}
+
+.drop3 .aboutus-submenu ul {
+    position: absolute;
+    left: 30%;
+    top: 0;
+    background-color: whitesmoke;
+}
+
+.drop3 .aboutus:hover .aboutus-submenu {
+    display: block;
+}
+
+.careers-submenu {
+    display: none;
+}
+
+.drop3 .careers-submenu ul {
+    position: absolute;
+    left: 30%;
+    top: 0;
+    background-color: whitesmoke;
+}
+
+.drop3 .careers:hover .careers-submenu {
+    display: block;
+}
+
+.corporative-submenu {
+    display: none;
+}
+
+.drop3 .corporative-submenu ul {
+    position: absolute;
+    left: 30%;
+    top: 0;
+    background-color: whitesmoke;
+}
+
+.drop3 .Corporative:hover .corporative-submenu {
+    display: block;
+}
+
+.careers-sub-menu {
+    display: none;
+}
+
+.drop3 .careers .careers-submenu .careers-subme .careers-sub-menu ul {
+    width: 100%;
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+
+.drop3 .careers .careers-submenu .careers-subme:hover .careers-sub-menu {
+    display: block;
+}
+
+.community-sub-menu {
+    display: none;
+}
+
+.drop3 .Corporative .corporative-submenu .community-subme .community-sub-menu ul {
+    width: 100%;
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+
+.drop3 .Corporative .corporative-submenu .community-subme:hover .community-sub-menu {
+    display: block;
+}
+
+.education-sub-menu {
+    display: none;
+}
+
+.drop3 .Corporative .corporative-submenu .education-subme .education-sub-menu ul {
+    width: 100%;
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+
+.drop3 .Corporative .corporative-submenu .education-subme:hover .education-sub-menu {
+    display: block;
+}
+
+.environment-sub-menu {
+    display: none;
+}
+
+.drop3 .Corporative .corporative-submenu .environment-subme .environment-sub-menu ul {
+    width: 100%;
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+
+.drop3 .Corporative .corporative-submenu .environment-subme:hover .environment-sub-menu {
+    display: block;
+}
+
+.art-sub-menu {
+    display: none;
+}
+
+.drop3 .Corporative .corporative-submenu .art-subme .art-sub-menu ul {
+    width: 100%;
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+
+.drop3 .Corporative .corporative-submenu .art-subme:hover .art-sub-menu {
+    display: block;
+}
+
+
+
+
+/* -----INVESTOR RELATIONS---- */
+.drop4 {
+    display: none;
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+}
+
+.drop4-btnss .drop4 ul {
+    width: 30%;
+    background: #fff;
+    min-height: 100%;
+    padding: 27px 0 37px;
+    transition: all .2s ease-in-out;
+}
+
+.drop4-btnss .drop4 ul li{
+    padding-left: 20px;
+    padding-right: 25px;
+}
+
+.drop4-btnss .drop4 ul li a {
+    position: relative;
+    font-size: 15px;
+    font-weight: 700;
+    display: block;
+    color: #424a52;
+    /* border-bottom: none !important; */
+    border-bottom: thin solid rgba(0, 0, 0, 0.178);
+}
+
+.information-submenu {
+    display: none;
+}
+
+.drop4 .information-submenu ul {
+    position: absolute;
+    left: 30%;
+    top: 0;
+    background-color: whitesmoke;
+}
+
+.drop4 .information:hover .information-submenu {
+    display: block;
+}
+
+
+.header-2 .dropdownmenu li a:hover {
+    color: #dd4f05;
+    /* border-bottom: solid #dd4f05; */
+}
+
+.dropdownmenu .drop1-btnss:hover .dropp1 {
+    display: block;
+    background: #f7f8f8;
+    border: 1px solid #e0e1e2;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, .15);
+    transition: all .2s ease-in-out;
+    position: absolute;
+    top: 150%;
+    left: 0;
+    width: 77.5%;
+    height: 130vh;
+}
+
+.dropdownmenu .drop2-btnss:hover .drop2 {
+    display: block;
+    background: #f7f8f8;
+    border: 1px solid #e0e1e2;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, .15);
+    transition: all .2s ease-in-out;
+    position: absolute;
+    top: 150%;
+    left: 0;
+    width: 77.5%;
+    height: 105vh;
+}
+
+.dropdownmenu .drop3-btnss:hover .drop3 {
+    display: block;
+    background: #f7f8f8;
+    border: 1px solid #e0e1e2;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, .15);
+    transition: all .2s ease-in-out;
+    position: absolute;
+    top: 150%;
+    left: 0;
+    width: 77.5%;
+    height: 100vh;
+}
+
+.dropdownmenu .drop4-btnss:hover .drop4 {
+    display: block;
+    background: #f7f8f8;
+    border: 1px solid #e0e1e2;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, .15);
+    transition: all .2s ease-in-out;
+    position: absolute;
+    top: 150%;
+    left: 0;
+    width: 77.5%;
+    height: 100vh;
+}
+
+
+/* ------HEADER 1 TWO LATER------ */
+.header-1-later{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 9vh;
+    display: none;
+}
+.header-1-later ul #naija a{
+    text-decoration: none;
+    padding: 5px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    background-color: hsla(0, 0%, 100%, .85);
+}
+.header-1-later ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: space-between;
+    width: 40%;
+    padding: 0;
+    height: 100%;
+    background: #dd4f05;
+}
+.header-1-later ul li{
+    padding: 10px 15px 0px 17px;
+    padding-bottom: 1em;
+    text-align: center;
+}
+.header-1-later a{
+    color: #FAE5DA;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.header-1-later ul li ul{
+    display: block;
+    display: none;
+    background-color: #FFFFFFBA;
+    width: 13rem !important;
+    position: absolute;
+    z-index: 1;
+    transition: all  ease-out;
+}
+.header-1-later ul .locate:hover ul{
+    display: block;
+}
+.LOGIN-2 .login-text{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.LOGIN-2 .skew-me{
+    position: absolute;
+    width: 10rem;
+    top: 0;
+    left: 528px;
+    z-index: -1;
+    transform: skewX(-27deg);
+    background: #ab3d04;
+    transition: all .2s ease-in-out;
+}
+.LOGIN-2{
+    width: 15rem;
+    z-index: 1;
+    transition: all .2s ease-in-out;
+}
+.LOGIN-2 .login-text{
+   transform: skew(23deg);
+}
+.LOGIN-2 .login{
+    padding: 10px 15px 0px 17px;
+    padding-bottom: 1em;
+    text-align: center;
+}
+.LOGIN-2 .login a{
+    color: #fae5da;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+
 
 /* -----TABLET SCREEN----- */
 .displaylater{
@@ -166,7 +1115,9 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #74797F;
 }
-
+.helpmeooo li:hover a{
+    color: #DD4F05;
+}
 /* -----ACCODION-2----SECTION */
 .accordion-2{
     display: none;
@@ -328,6 +1279,9 @@ svg{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .left{
+    position: sticky;
+    top: 0;
+    border: solid red;
     padding: 0px 15px;
     max-width: 20%;
     position: sticky;
@@ -378,6 +1332,7 @@ svg{
 /* -------MEDIA CENTRE----- */
 
 .Media{
+    margin-top: 2em;
     background: #F7F8F8;
     padding: 24px 0px 36px;
 }
@@ -440,6 +1395,14 @@ ol li{
         margin: 0;
         padding: 0px 15px;
     }
+    .header-2 .dropdownmenu{
+        width: 100%;
+        padding: 0;
+    }
+    .Media ol{
+        margin: 0;
+        width: 100%;
+    }
 }
 
 @media(max-width:1120px){
@@ -459,15 +1422,13 @@ ol li{
         width: 100%;
     }
     .header-1 ul{
-        width: 90%;
+        width: 80%;
     }
     .right{
-        /* border: solid blue; */
         margin-left: 0;
         max-width: 70%;
     }
     .left{
-        /* border: solid red; */
         max-width: 30%;
         margin: 0;
     }
@@ -479,6 +1440,37 @@ ol li{
         margin: 0;
     }
 
+    .skew-me{
+        position: absolute;
+        top: 0;
+        left: 600px;
+        height: 80%;
+    }
+
+}
+
+@media(max-width:1000px){
+    .header-1{
+        display: none;
+    }
+    .header-1-later{
+        display: block;
+        width: 95%;
+    }
+    .header-1-later ul{
+        width: 75%;
+    }
+ 
+}
+@media(max-width:991px){
+    .header-1-later ul{
+        width: 70%;
+    }
+    .header-1-later .skew-me{
+        position: absolute;
+        top: 0;
+        left: 540px;
+    }
 }
 
 
@@ -528,6 +1520,9 @@ ol li{
     }
     .Media ol{
         margin: 0;
+    }
+    .header-1-later{
+        display: none;
     }
     
 
