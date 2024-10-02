@@ -81,17 +81,13 @@ body {
     background-color: #FFFFFFBA;
     width: 13rem !important;
     position: absolute;
-    /* visibility: hidden; */
     z-index: 1;
     transition: all ease-out;
 }
 
 .header-1 ul .locate:hover ul {
-    /* background-color: black; */
     display: block;
-    /* z-index: -1; */
 }
-
 
 .header-1 .LOGIN .login-text {
     height: 100%;
@@ -121,7 +117,6 @@ body {
 .header-1 .LOGIN .login-text {
     transform: skew(23deg);
 }
-
 
 .header-1 .login a {
     color: #fae5da;
@@ -235,6 +230,10 @@ body {
 .sect-two .headline {
     margin-bottom: 20px;
 }
+.sect-two a:hover div{
+    color: red;
+    transition: all 0.2s ease-in-out;
+}
 
 /* ------ACCORDION SECTION---- */
 .accordion-body ul {
@@ -297,6 +296,10 @@ body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #74797F;
 }
+.helpmeooo div ul li a:hover{
+    color: #dd4f05;
+}
+
 
 /* -----ACCODION-2----SECTION */
 .accordion-2 {
@@ -406,7 +409,9 @@ svg {
 }
 
 .svg-s ul li a p {
+    margin-top: 1em;
     font-size: 13px;
+    font-weight: 700;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #686E72;
 }
@@ -1194,7 +1199,9 @@ svg {
 
 .header-2 .dropdownmenu li a:hover {
     color: #dd4f05;
-    /* border-bottom: solid #dd4f05; */
+}
+.header-2 .dropdownmenu .borderme:hover{
+    border-bottom: solid #dd4f05;
 }
 
 .dropdownmenu .drop1-btnss:hover .dropp1 {
@@ -1353,6 +1360,7 @@ svg {
 
 /* ------CAROUSEL PAGE----- */
 .carousel {
+    cursor: grab;
     margin-top: 2em;
     position: relative;
 }
@@ -1404,6 +1412,8 @@ svg {
     padding: 16px 36px;
     margin: 32px 0px 0px;
     background: #DD4F05;
+    box-shadow: 5px 5px 17px #b1b1b1,
+    -5px -5px 17px #ffffff;
 }
 
 .carosel-1 p {
@@ -1454,7 +1464,6 @@ svg {
     font-size: 14px;
     font-weight: 700;
     color: #676c72;
-    border: 0;
     background: transparent;
 }
 
@@ -1471,6 +1480,8 @@ svg {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background: #dd4f05;
     padding: 10px 24px 12px 26px;
+    box-shadow: 5px 5px 17px #b1b1b1,
+    -5px -5px 17px #ffffff;
     color: #FFF;
 }
 
@@ -1478,13 +1489,21 @@ svg {
     margin: 22px 0px 0px;
 }
 
-.logindown div span {
+.logindown div p{
     display: flex;
     justify-content: center;
     font-size: 14px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 0px 10px 0px 0px;
     text-align: center;
+}
+.online-Banking ul li:hover a{
+    color: #dd4f05;
+    border-bottom: green ;
+}
+.logindown div p span:hover{
+    color: #dd4f05;
+    cursor: pointer;
 }
 
 /* ------Carousel displaylater-------- */
@@ -1590,6 +1609,7 @@ svg {
     width: 250px;
     height: 100px;
 }
+
 
 
 

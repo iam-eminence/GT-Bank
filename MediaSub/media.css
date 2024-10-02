@@ -1061,6 +1061,7 @@ ol li{
 .Media ol a:hover{
     color: #DD4F05;
 }
+
 /* -------Next---- */
 .media-centre{
     background: #F7F8F8;
@@ -1131,19 +1132,6 @@ ol li{
     font-size: 18px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-/* .h6-me ul li{
-    border-radius: 3px;
-    background: #e0e0e0;
-    box-shadow:  5px 5px 17px #c3c3c3,
-             -5px -5px 17px #fdfdfd;
-}
-.h6-me ul{
-    display: flex;
-}
-.card-container{
-    border: solid green;
-    height: 20vh;
-} */
 
 /* ------PAGE-SECTION---- */
 .section-page{
@@ -1182,6 +1170,8 @@ ol li{
     text-decoration: none;
 }
 .anchor a{
+    box-shadow: 5px 5px 17px #b1b1b1,
+    -5px -5px 17px #ffffff;
     background: #DD4F05;
     text-decoration: none;
     padding: 10px 24px 12px 26px;
@@ -1474,8 +1464,96 @@ svg{
 .helpmeooo li:hover a{
     color: #DD4F05;
 }
+.header-2 .dropdownmenu .borderme:hover{
+    border-bottom: solid #dd4f05;
+}
 
+/* --------GRID SECTION------ */
+.allcards{
+    width: 70em;
+    margin: auto;
+    display: grid;
+    gap: 2em;
+    grid-template-columns: repeat(8, 1fr);
+    overflow-x: auto;
+    margin-bottom: 2em;
+}
+.allcards .crds{
+    border-radius: 10px;
+    border-radius: 0px;
+    background: #e0e0e0;
+    box-shadow:  5px 5px 13px #cccccc,
+                 -5px -5px 13px #f4f4f4;
+    background-color: white;
+    margin: 10px 0px;
+    width: 10em;
+    padding: 30px 20px 25px;
+    cursor: pointer;
 
+}
+.allcards .crds a{
+    text-decoration: none;
+    color: #424A52;
+    align-content: center;
+}
+.allcards .crds a p{
+    text-align: center;
+    font-weight: 700;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.allcards .crds a svg{
+    /* border: solid red; */
+    background: none;
+    color: #dd4f05;
+}
+.h6-me .allcards .crds:hover a{
+    color: #DD4F05;
+}
+#accordionFlushExample  .crds a {
+    font-weight: 700;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    color: #424A52;
+    margin: 0px 10px;
+}
+#accordionFlushExample svg{
+    background: none;
+    color: #dd4f05;
+    margin-right: 2em;
+}
+#accordionFlushExample{
+    margin-bottom: 2em;
+    padding: 50px 0px;
+    background-color: whitesmoke;
+    display: none;
+}
+.accordion-item h2{
+    margin: 0px 10px;
+    border-radius: 0px;
+    background: #e0e0e0;
+    box-shadow:  5px 5px 13px #cccccc,
+                 -5px -5px 13px #f4f4f4;
+}
+.accordion-item p{
+    font-size: 18px;
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+}
+.h6-me h6{
+    color: #424A52;
+    font-size: 18px;
+    margin: 0px 0px 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 85%;
+    margin: auto;
+    font-weight: 700;
+}
+.h6-me{
+    margin-top: 2em;
+}
 
 
 
@@ -1546,6 +1624,13 @@ svg{
         top: 0;
         left: 600px;
         height: 80%;
+    }
+    .allcards{
+        width: 90%;
+    }
+    .h6-me h6{
+        width: 100%;
+        padding: 20px;
     }
 }
 
@@ -1626,5 +1711,11 @@ svg{
     
     .header-1-later{
         display: none;
+    }
+    .h6-me{
+        display: none;
+    }
+    #accordionFlushExample{
+        display: block;
     }
 }
